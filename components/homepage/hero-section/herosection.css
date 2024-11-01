@@ -1,0 +1,89 @@
+.carousel-container {
+  position: relative;
+  background-image: url('/public/images/ecommerce-01.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1;
+}
+
+.hero-slider {
+  background-color:#17335D  !important;
+  position: relative;
+  z-index: 2; /* Ensures content is on top of the overlay */
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-item.active .carousel-img {
+  transform: scale(1.05);
+}
+
+.hero-slider .slide-title,
+.hero-slider .slide-text {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease-in-out;
+  color: #fff;
+}
+
+.carousel-item.active .slide-title,
+.carousel-item.active .slide-text {
+  opacity: 1;
+  transform: translateX(0);
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px; /* Adjust size */
+  height: 40px;
+  border-radius: 50%; /* Makes it rounded */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none; /* Hide default icons */
+}
+
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  content: ''; /* Placeholder for custom icon */
+  display: inline-block;
+  width: 12px; /* Adjust icon size */
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+}
+
+.carousel-control-prev::before {
+  transform: rotate(135deg); /* Left arrow */
+}
+
+.carousel-control-next::before {
+  transform: rotate(-45deg); /* Right arrow */
+}
+
+.carousel-control-prev,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken on hover */
+}
