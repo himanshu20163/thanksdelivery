@@ -5,6 +5,7 @@ import Testimonial_container from './testimonial';
 import Bestseller from './best-seller/ProductCard';
 import SellerCard from './best-seller/Sellercard';
 import Productslider from './product-slider/Productslider';
+import Demoslider from './product-slider/Demoslider';
 
 const Homepage = () => {
 
@@ -13,7 +14,8 @@ const Homepage = () => {
       <Hero_section />
       {/* <Bestseller /> */}
       <SellerCard />
-      <Productslider />
+      {/* <Productslider /> */}
+      <Demoslider />
     </div>
   )
 }
