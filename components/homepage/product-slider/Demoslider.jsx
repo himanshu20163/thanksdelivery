@@ -66,9 +66,9 @@ const Demoslider = ()=>{
                 </div>
                 <div className="row">
                 {
-                            products_data.map((ele)=>{
+                            products_data.map((ele,index)=>{
                                 return(
-                                   <div className='col-lg-3 col-md-6 col-12 productcard'>
+                                   <div key={index} className='col-lg-3 col-md-6 col-12 productcard'>
                                     <img src={ele.img} />
                                     <h4>{ele.title}</h4>
                                     <h5>{ele.subtitle}</h5>
