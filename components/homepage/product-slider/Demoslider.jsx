@@ -55,9 +55,9 @@ const Demoslider = ()=>{
                     <div className="col-lg-6">
                        <div className="tabs-container">
                         {
-                            list.map((ele)=>{
+                            list.map((ele , index)=>{
                                 return(
-                                    <span className='active'>{ele}</span>
+                                    <span key={index} className='active'>{ele}</span>
                                 )
                             })
                         }
