@@ -87,8 +87,8 @@ const Demoslider = ()=>{
                     <Bannerdata />
                 </div>
 
-                <div className="row my-4">
-                <h1 className="text-left my-5"><strong>Best Seller </strong><span class="underlined underline-clip">Product</span></h1>
+                <div className="row my-2">
+                <h1 className="text-left mb-5"><strong>Best Seller </strong><span class="underlined underline-clip">Product</span></h1>
         
                 {
                             products_data.map((ele,index)=>{
