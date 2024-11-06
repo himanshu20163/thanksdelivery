@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ProductCard from "./ProductCard";
+import Demoseller from "./Demoseller";
 
 const products = [
   {
@@ -42,6 +43,8 @@ function SellerCard() {
           />
         ))}
       </div>
+      
+      <Demoseller />
     </div>
   );
 }
