@@ -2,6 +2,7 @@
 import React from 'react'
 import "./product-slider.css";
 import { ShoppingCart } from "lucide-react";
+import Bannerdata from './Bannerdata';
 
 const Demoslider = ()=>{
     const list = [
@@ -46,11 +47,12 @@ const Demoslider = ()=>{
         },
     ]
     return(
+
         <div className="rcmdproductcontainer">
-            <div className="cotainer">
-                <div className="row p-2">
+            <div className="container-fluid">
+                <div className="row py-3">
                     <div className="col-lg-6">
-                        <h2>Our Product</h2>
+                    <h1 className="text-left my-3"><strong>Our </strong><span class="underlined underline-clip">Product</span></h1>
                     </div>
                     <div className="col-lg-6">
                        <div className="tabs-container">
@@ -71,6 +73,29 @@ const Demoslider = ()=>{
                                    <div key={index} className='col-lg-3 col-md-6 col-12 productcard'>
                                     <img src={ele.img} />
                                     <h4>{ele.title}</h4>
+                                    <h5>{ele.subtitle}</h5>
+                                    <span><stong>{ele.regprice}</stong>{ele.saleprice}</span>
+                                    <p>{ele.rating}</p>
+                                    <button className='btncard'>Add to cart<ShoppingCart /></button>
+                                    </div>
+                                )
+                            })
+                         }
+                </div>
+                
+                <div className="row">
+                    <Bannerdata />
+                </div>
+
+                <div className="row my-4">
+                <h1 className="text-left my-5"><strong>Best Seller </strong><span class="underlined underline-clip">Product</span></h1>
+        
+                {
+                            products_data.map((ele,index)=>{
+                                return(
+                                   <div key={index} className='col-lg-3 col-md-6 col-12 productcard'>
+                                    <img src={ele.img} />
+                                    <h4 className='py-3'>{ele.title}</h4>
                                     <h5>{ele.subtitle}</h5>
                                     <span><stong>{ele.regprice}</stong>{ele.saleprice}</span>
                                     <p>{ele.rating}</p>

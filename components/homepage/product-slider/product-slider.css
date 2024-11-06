@@ -221,18 +221,24 @@
   margin:0em 1.5rem;
 }
 .tabs-container span.active{
-  border-radius: 50px;
-  color: #fff;
-  padding: 1rem;
-  background-color: #080481;
+  width: -webkit-fill-available;
+    border-radius: 50px;
+    color: #fff;
+    padding: 1rem;
+    background-color: #080481;
+    text-align: center;
 }
 .rcmdproductcontainer .productcard{
   border:1px solid green;
   border-radius: 20px;
-  margin: 10px;
+  margin: 6px;
   padding: 20px;
-  width: 23%;
+  width: 24%;
   overflow: hidden;
+}
+.tabs-container {
+  display: flex;
+  justify-content: right;
 }
 .rcmdproductcontainer .productcard img{
   -webkit-transition: all .4s ease-in-out;
@@ -246,7 +252,7 @@
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
-    width: 55%;
+    width: 56%;
 }
 .productcard .btncard{
   background-color: #e6f9ef;
@@ -262,4 +268,17 @@
   background-color: green;
   color: #fff;
   
+}
+
+/* banner-box */
+.delivery-section{
+  margin:10px;
+  border-radius: 50px;
+  width: 100%;
+  height: auto;
+  background-color: hsl(148, 59%, 39%);
+}
+.delivery-section button{
+  background-color: #080481;
+  color: #fff;
 }

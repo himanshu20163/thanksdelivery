@@ -28,10 +28,12 @@ const products = [
 function SellerCard() {
   return (
     <div className="container-fluid p-4">
-      <div class="three">
+      {/* <div class="three">
+     
         <h1>Best Seller</h1>
-      </div>
-      <div className="d-flex justify-content-space-between align-items-center flex-wrap">
+      </div> */}
+       <h1 className="text-center my-4"><strong>Our </strong><span class="underlined underline-clip">Seller</span></h1>
+      <div className="d-flex justify-content-center align-items-center flex-wrap">
         {products.map((product, index) => (
           <ProductCard
             key={index}
