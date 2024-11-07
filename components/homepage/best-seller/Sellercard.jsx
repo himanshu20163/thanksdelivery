@@ -2,6 +2,7 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import Demoseller from "./Demoseller";
+import CategoryCarousel from "./Categoriesslider";
 
 const products = [
   {
@@ -29,12 +30,9 @@ const products = [
 function SellerCard() {
   return (
     <div className="container-fluid p-4">
-      {/* <div class="three">
-     
-        <h1>Best Seller</h1>
-      </div> */}
-       <h1 className="text-center my-4"><strong>Our </strong><span class="underlined underline-clip">Seller</span></h1>
-      <div className="d-flex justify-content-center align-items-center flex-wrap">
+      <CategoryCarousel />
+       <h1 className="text-center my-4 py-5"><strong>Our </strong><span class="underlined underline-clip">Seller</span></h1>
+      {/* <div className="d-flex justify-content-center align-items-center flex-wrap">
         {products.map((product, index) => (
           <ProductCard
             key={index}
@@ -42,7 +40,7 @@ function SellerCard() {
             image={product.image}
           />
         ))}
-      </div>
+      </div> */}
       
       <Demoseller />
     </div>

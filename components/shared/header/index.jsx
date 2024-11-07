@@ -192,7 +192,7 @@ const HeaderFile = () => {
           </nav>
         </div>
 
-        <div className="col-lg-12">
+        {/* <div className="col-lg-12">
           <div className="categories-bar">
           <nav className="navbar navbar-expand-lg ">
             <div className="container-fluid">
@@ -245,7 +245,7 @@ const HeaderFile = () => {
           </nav>
           </div>
           
-        </div>
+        </div> */}
       </div>
       {islogin && <Login_panel />}
     </header>

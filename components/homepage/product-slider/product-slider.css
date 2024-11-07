@@ -221,10 +221,10 @@
   margin:0em 1.5rem;
 }
 .tabs-container span.active{
-  width: -webkit-fill-available;
+  width: fit-content;
     border-radius: 50px;
     color: #fff;
-    padding: 1rem;
+    padding: 0.5em 1em;
     background-color: #080481;
     text-align: center;
 }
@@ -238,7 +238,7 @@
 }
 .tabs-container {
   display: flex;
-  justify-content: right;
+  overflow-x: scroll;
 }
 .rcmdproductcontainer .productcard img{
   -webkit-transition: all .4s ease-in-out;

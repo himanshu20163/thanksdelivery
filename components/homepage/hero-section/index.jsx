@@ -19,7 +19,7 @@ function Hero_section() {
       >
         <Carousel.Item>
           <div className="row border rounded p-5 hero-slider">
-            <div className="col-lg-8  d-flex justify-content-center flex-column">
+            <div className="col-lg-8 col-6  d-flex justify-content-center flex-column">
               <h3 >Get Grocery order </h3>
               <button>View More <ShoppingCart /></button>
             </div>
@@ -37,7 +37,7 @@ function Hero_section() {
 
         <Carousel.Item>
           <div className="row border rounded p-5 hero-slider">
-            <div className="col-lg-8  d-flex justify-content-center flex-column">
+            <div className="col-lg-8 col-6  d-flex justify-content-center flex-column">
               <h3 >Get Grocery order </h3>
               <button>View More <ShoppingCart /></button>
             </div>
@@ -55,7 +55,7 @@ function Hero_section() {
 
         <Carousel.Item>
           <div className="row border rounded p-5 hero-slider">
-            <div className="col-lg-8  d-flex justify-content-center flex-column">
+            <div className="col-lg-8 col-6  d-flex justify-content-center flex-column">
               <h3 >Get Grocery order </h3>
               <button>View More <ShoppingCart /></button>
             </div>

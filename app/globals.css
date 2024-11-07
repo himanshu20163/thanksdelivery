@@ -634,6 +634,38 @@ a {
   .swiper-slide{
     width: 100% !important;
   }
+
+  /* menu bar */
+  #navbarNav{
+    background-color: #082864;
+    flex-direction: column;
+  }
+  #navbarNav .map-icon, #navbarNav .search , #navbarNav .other-details{
+     width: 100%;
+     background-color: #082864;
+     color: #fff;
+  }
+
+  /* hero slider css */
+  .hero-slider h3{
+    font-size: 24px !important;
+  }
+  .hero-slider button{
+    font-size: 12px !important;
+    padding: 15px !important;
+  
+  }
+
+  /* best seller  css */
+  .vendor-card-wrapper .vendor-card{
+    width: 100%;
+  }
+
+  /* product section css */
+  .rcmdproductcontainer .productcard{
+    width:48% !important;
+  }
+
 }
 
 /* end home css */
@@ -991,6 +1023,9 @@ a {
 @media screen and (max-width:440px) {
   .unblock-benfit-container .services-card-box{
     width:100%;
+  }
+  .rcmdproductcontainer .productcard{
+    width:100% !important;
   }
 }
 
