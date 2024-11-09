@@ -60,7 +60,7 @@
 }
 .flex-center {
   gap:10px;
-  margin:30px 0px;
+  margin:10px 0px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -236,9 +236,15 @@
   width: 24%;
   overflow: hidden;
 }
+.rcmdproductcontainer h1{
+  margin:20px 0px;
+}
 .tabs-container {
   display: flex;
   overflow-x: scroll;
+}
+.tabs-container::-webkit-scrollbar {
+  display: none;
 }
 .rcmdproductcontainer .productcard img{
   -webkit-transition: all .4s ease-in-out;
@@ -248,10 +254,10 @@
   width: 60%;
 }
 .rcmdproductcontainer .productcard:hover>img{
-  -webkit-transform: scale(1.2); 
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
+  -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
     width: 56%;
 }
 .productcard .btncard{
@@ -272,7 +278,6 @@
 
 /* banner-box */
 .delivery-section{
-  margin:10px;
   border-radius: 50px;
   width: 100%;
   height: auto;

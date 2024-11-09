@@ -21,9 +21,9 @@ function Hero_section() {
           <div className="row border rounded p-5 hero-slider">
             <div className="col-lg-8 col-6  d-flex justify-content-center flex-column">
               <h3 >Get Grocery order </h3>
-              <button>View More <ShoppingCart /></button>
+              <button>View More <ShoppingCart className='slider-btn-cart'/></button>
             </div>
-            <div className="col-lg-4 ">
+            <div className="col-lg-4 col-6">
               <img
                 src="https://react.marketpro.wowtheme7.com/assets/images/thumbs/banner-img1.png"
                 className="carousel-img"
@@ -38,10 +38,10 @@ function Hero_section() {
         <Carousel.Item>
           <div className="row border rounded p-5 hero-slider">
             <div className="col-lg-8 col-6  d-flex justify-content-center flex-column">
-              <h3 >Get Grocery order </h3>
-              <button>View More <ShoppingCart /></button>
+              <h3 >Get Grocery order two</h3>
+              <button>View More <ShoppingCart className='slider-btn-cart'/></button>
             </div>
-            <div className="col-lg-4 ">
+            <div className="col-lg-4 col-6">
               <img
                 src="https://react.marketpro.wowtheme7.com/assets/images/thumbs/banner-img1.png"
                 className="carousel-img"
@@ -56,10 +56,10 @@ function Hero_section() {
         <Carousel.Item>
           <div className="row border rounded p-5 hero-slider">
             <div className="col-lg-8 col-6  d-flex justify-content-center flex-column">
-              <h3 >Get Grocery order </h3>
-              <button>View More <ShoppingCart /></button>
+              <h3 >Get Grocery order third </h3>
+              <button>View More <ShoppingCart className='slider-btn-cart'/></button>
             </div>
-            <div className="col-lg-4 ">
+            <div className="col-lg-4 col-6">
               <img
                 src="https://react.marketpro.wowtheme7.com/assets/images/thumbs/banner-img1.png"
                 className="carousel-img"

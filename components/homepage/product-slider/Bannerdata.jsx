@@ -14,7 +14,7 @@ const Bannerdata = () => {
                                     <img src="https://wowtheme7.com/tf/marketpro/assets/images/thumbs/delivery-man.png" />
                                 </div>
                             </div>
-                            <div class="col-md-5 col-sm-7 my-3">
+                            <div class="col-md-5 col-sm-12 my-3">
                                 <div class="text-center">
                                     <h4 class="text-white mb-8 aos-init aos-animate" data-aos="fade-down"><strong>We Delivery on Next Day from 10:00 AM to 08:00 PM</strong></h4>
                                     <p class="text-white aos-init aos-animate" data-aos="zoom-in"><strong>For Orders starts from $100</strong></p>
@@ -24,7 +24,7 @@ const Bannerdata = () => {
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-5 d-sm-block d-none aos-init aos-animate" data-aos="zoom-out" data-aos-duration="800">
+                            <div class="col-md-4 col-sm-5 d-none d-md-block aos-init aos-animate" data-aos="zoom-out" data-aos-duration="800">
                                 <img src='https://wowtheme7.com/tf/marketpro/assets/images/thumbs/special-snacks-img.png' width="350" height="300" />
                             </div>
                         </div>

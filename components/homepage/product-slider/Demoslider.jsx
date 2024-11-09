@@ -52,7 +52,7 @@ const Demoslider = ()=>{
             <div className="container-fluid">
                 <div className="row py-3">
                     <div className="col-lg-6">
-                    <h1 className="text-left my-3"><strong>Our </strong><span class="underlined underline-clip">Product</span></h1>
+                    <h1 className="text-left "><strong>Our </strong><span class="underlined underline-clip">Product</span></h1>
                     </div>
                     <div className="col-lg-6">
                        <div className="tabs-container">

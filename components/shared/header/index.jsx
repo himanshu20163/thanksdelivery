@@ -94,8 +94,8 @@ const HeaderFile = () => {
         </div>
 
         <div className="col-lg-12">
-          <nav className="navbar navbar-expand-lg p-4 main-menu">
-            <div className="container">
+          <nav className="navbar navbar-expand-lg py-4 main-menu">
+            <div className="container-fluid">
               <Link href="/">
                 <img src="https://react.marketpro.wowtheme7.com/assets/images/logo/logo.png" style={{
                   backgroundSize:"contain"
@@ -117,13 +117,9 @@ const HeaderFile = () => {
                     <MapPin strokeWidth={0.5} />
                     <h6>noida up india</h6>
                   </div>
-                  <div class="search">
-                    <input
-                      type="text"
-                      placeholder="Search for products"
-                      class="form-control w-100 p-1"
-                    />
-                    <Search className="search-icon "/>
+                  <div class="form-group has-search-right search-bar">
+                  <span class="fa fa-search form-control-feedback"></span>
+                  <input type="text" class="form-control" placeholder="Search" />
                   </div>
                   <div className="other-details">
                     <div
