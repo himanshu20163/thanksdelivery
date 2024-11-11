@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Footerfile = () => {
   return (
     <footer>
-      <div className="container p-3">
+      <div className="container p-3 my-5">
         <div className="row">
           <div className="col-lg-3 col-md-4 col-sm-6 col-12 ">
             <div className="footer-list-box">

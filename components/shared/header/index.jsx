@@ -6,7 +6,10 @@ import { Tooltip } from "react-bootstrap";
 import Link from "next/link";
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import { ShoppingCart, User, MapPin ,Search,Heart,PhoneCall   } from "lucide-react";
+import {
+  ShoppingCart, User, MapPin, Search, Heart, House, Grip, CircleUserRound, ShoppingBag,
+  BadgePercent, Package
+} from "lucide-react";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faShoppingCart, faUser , faMap  } from '@fortawesome/free-solid-svg-icons';
 
@@ -94,11 +97,11 @@ const HeaderFile = () => {
         </div>
 
         <div className="col-lg-12">
-          <nav className="navbar navbar-expand-lg py-4 main-menu">
-            <div className="container-fluid">
+          <nav className="navbar navbar-expand-lg py-0">
+            <div className="container-fluid main-menu">
               <Link href="/">
                 <img src="https://react.marketpro.wowtheme7.com/assets/images/logo/logo.png" style={{
-                  backgroundSize:"contain"
+                  backgroundSize: "contain"
                 }} />
               </Link>
               <button
@@ -118,8 +121,8 @@ const HeaderFile = () => {
                     <h6>noida up india</h6>
                   </div>
                   <div class="form-group has-search-right search-bar">
-                  <span class="fa fa-search form-control-feedback"></span>
-                  <input type="text" class="form-control" placeholder="Search" />
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search" />
                   </div>
                   <div className="other-details">
                     <div
@@ -130,13 +133,12 @@ const HeaderFile = () => {
                       }}
                     >
                       <span>
-                      <ShoppingCart strokeWidth={0.5} />
-                      <label>23</label>
+                        <ShoppingCart strokeWidth={0.5} />
+                        <label>23</label>
                       </span>
-                      
+
                       <span>Cart</span>
 
-                      {/* <FontAwesomeIcon icon={faShoppingCart} size="2x"  /> */}
                     </div>
                     <div
                       className="cart-icon px-3"
@@ -147,20 +149,19 @@ const HeaderFile = () => {
                     >
 
                       <span>
-                      <Heart strokeWidth={0.5} />
-                      <label>23</label>
+                        <Heart strokeWidth={0.5} />
+                        <label>23</label>
                       </span>
-                     
+
                       <span>Wishlist</span>
 
-                      {/* <FontAwesomeIcon icon={faShoppingCart} size="2x"  /> */}
                     </div>
                     <div
                       className="user-icon px-3"
                       onClick={handleLoginClick}
                       style={{
                         cursor: "pointer",
-                        display:"inline-flex"
+                        display: "inline-flex"
                       }}
                     >
                       {username != null ? (
@@ -175,10 +176,10 @@ const HeaderFile = () => {
                         </>
                       ) : (
                         <>
-                        <User strokeWidth={0.5} />
-                        <span>User Account</span>
+                          <User strokeWidth={0.5} />
+                          <span>User Account</span>
                         </>
-                        
+
                       )}
                     </div>
                   </div>
@@ -188,60 +189,77 @@ const HeaderFile = () => {
           </nav>
         </div>
 
-        {/* <div className="col-lg-12">
-          <div className="categories-bar">
-          <nav className="navbar navbar-expand-lg ">
-            <div className="container-fluid">
-              
-              {!isMenuOpen ? (
-                ""
-              ) : (
-                <div className="w-100 d-flex justify-content-start">
-                <div className=" collapse navbar-collapse">
-                  <ul className="navbar-nav mt-2">
-                    <li className="nav-item item-data">
-                      <a className="nav-link" href="#">
-                        Farm
-                      </a>
-                    </li>
-                    <li className="nav-item item-data">
-                    <a className="nav-link" href="#">
-                      Wholeshale
-                    </a>
-                    </li>
-                    <li className="nav-item item-data">
-                      <a className="nav-link" href="#">
-                        Skilled Resource 
-                      </a>
-                    </li>
-                    <li className="nav-item item-data">
-                      <a className="nav-link">Resturant</a>
-                    </li>
-                    <li className="nav-item item-data">
-                      <a className="nav-link">Real State</a>
-                    </li>
-                    <li className="nav-item item-data">
-                      <a className="nav-link">Industrial Capcity</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="contact-us">
-                  <span className="p-2 m-2 border rounded">
-                  <PhoneCall />
-                  </span>
-                   <span className="fs-5 d-flex justify-content-center">
-                    +89 852471571
-                   </span>
-                   
-                </div>
-                </div>
-              )}
-            </div>
+        {
+          /* mobile menu */
+          <nav class="skew-menu">
+            <ul>
+              <li><a class="mobile-menu" href="#"><House /> <h6>Home</h6></a></li>
+              <li><a class="mobile-menu" href="#"><Grip /><h6>Catrgories</h6></a></li>
+              <li><a class="mobile-menu" href="#"><CircleUserRound /><h6>Account</h6></a></li>
+              <li><a class="mobile-menu" href="#"><BadgePercent /><h6>Offers</h6></a></li>
+              <li><a class="mobile-menu" href="#"><Package /><h6>My Order</h6></a></li>
+            </ul>
           </nav>
+        }
+
+        {
+          <div className="mobile-top-header">
+            <div className="top-bar">
+              <img src="https://react.marketpro.wowtheme7.com/assets/images/logo/logo.png" />
+
+              <div className="other-details">
+                <div
+                  className="cart-icon px-3"
+                  style={{
+                    position: "relative",
+                    display: "inline-flex",
+                  }}
+                >
+                  <span>
+                    <ShoppingCart strokeWidth={0.5} />
+                    <label>23</label>
+                  </span>
+
+                  <span>Cart</span>
+
+                </div>
+                <div
+                  className="cart-icon px-3"
+                  style={{
+                    position: "relative",
+                    display: "inline-flex",
+                  }}
+                >
+
+                  <span>
+                    <Heart strokeWidth={0.5} />
+                    <label>23</label>
+                  </span>
+
+                  <span>Wishlist</span>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div className="second-bar">
+              <div id="mobiletogglethanks">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Info</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          
-        </div> */}
+        }
+
       </div>
       {islogin && <Login_panel />}
     </header>
